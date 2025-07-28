@@ -65,7 +65,76 @@ const germanNouns = [
   "Erde",
   "Zeit",
   "Geld",
-  "Glück"
+    "Tom Cruise",
+    "Leonardo DiCaprio",
+    "Brad Pitt",
+    "Dwayne Johnson",
+    "Will Smith",
+    "Tom Hanks",
+    "Johnny Depp",
+    "Julia Roberts",
+    "Michael Jackson",
+    "Elvis Presley",
+    "Madonna",
+    "Elton John",
+    "Beyoncé",
+    "Freddie Mercury",
+    "Leonardo da Vinci",
+    "Vincent van Gogh",
+    "Pablo Picasso", 
+    "Toyota",
+    "Volkswagen",
+    "Mercedes-Benz",
+    "BMW",
+    "Audi",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Tesla",
+    "Nissan",
+    "Samsung",
+    "Apple",
+    "Xiaomi",
+    "Huawei",
+    "Gronkh", 
+    "Instagram", 
+    "Lego", 
+    "Playstation", 
+    "Gitarre", 
+    "Maus", 
+    "Ducati", 
+    "Lockenwickler", 
+    "Geist",
+    "Glas",
+    "Plutonium", 
+    "F16",
+    "Ferrari",
+    "Red",
+    "Nike",
+    "Adidas", 
+    "Dinosaurier", 
+    "Ludovico Einaudi",
+    "Polizei",
+    "Laserschwert", 
+    "Matrix",
+    "Tangente",
+    "Schaufel",
+    "Busch", 
+    "9/11",
+    "Pinguin",
+    "Schildkröte",
+    "Igel",
+    "Einhorn",
+    "Eichhörnchen",
+    "Tesa",
+    "Familie",
+    "Turbo", 
+    "Garmin", 
+    "Stein", 
+    "Harry Potter", 
+    "Schuh", 
+    "Einarmiger Bandit", 
+    "Ehrenmann", 
 ];
 
 const players = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6"];
@@ -123,6 +192,7 @@ const startNewGame = () => {
     resetNums();
     playerCount5.innerHTML = "*5";
   })
+
   playerCount6?.addEventListener("click", () => {
     maxPlayer = 6;
     resetNums();
@@ -137,9 +207,10 @@ const startNewGame = () => {
       if(revealField)  revealField.innerHTML = "reveal";      
 
   })
+
   revealField?.addEventListener("click", () => {
-     let showWord = false;
-  showWord = !showWord; 
+    let showWord = false;
+    showWord = !showWord; 
     if(showWord){
       if(playerIndex == imposterIndex){
         revealField.innerHTML = "Imposter";
