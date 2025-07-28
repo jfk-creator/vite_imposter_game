@@ -25,19 +25,25 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
+  margin-top: 25px;
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 1;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1;
 }
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
@@ -50,4 +56,25 @@ h1 {
   h2 {
     cursor: pointer;
   }
+}
+
+#revealButton {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 5px 15px 5px 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+}
+
+#nextButton {
+  display: flex;
+  padding: 5px 15px 5px 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  cursor: pointer;
 }
